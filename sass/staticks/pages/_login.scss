@@ -1,0 +1,30 @@
+.login{
+    padding: $padding 0;
+   
+    .login-now{
+        background-color: #FFF;
+        box-shadow: $box-shadow;
+        padding: $padding - 60;
+       
+
+    }
+   
+    .form-control{
+        box-shadow: none;
+        outline: none;
+       
+    }
+    
+    .placeholder{
+        font-size: 10px;
+
+    }
+    img{
+        transition: all .5s ease-in-out;
+        
+        &:hover{
+            transform: scale(1.1,1.1) ;
+        }
+    }
+}
+

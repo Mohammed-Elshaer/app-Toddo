@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>app</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&amp;display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="icon/font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="icon/fontawesome-free-5.13.1-web/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- */-- ------------------------------------------------------
+  start option-box
+------------------------------------------------------------- -->
+
+  <section class="option-box">
+    <div class="lang-option">
+      <ul class="list-unstyled">
+        <button class="square_btn" id="arabic" onclick='changeToRTL()'>عربي</button>
+        <button class="square_btn" id="english" onclick='changeToLTR()'>Fr</button>
+
+      </ul>
+    </div>
+    <div class="toggle-setting">
+      <i class="fas fa-cog fa-3x fa-spin"></i>
+    </div>
+  </section>
+  <!-- */-- ------------------------------------------------------
+end option-box
+------------------------------------------------------------- -->
+  <!-- =====================
+        start nav bar
+ ====================== -->
+
+  <nav id="nav" class="navbar navbar-expand-lg">
+    <div class="container">
+      <a id="logo" class="navbar-brand" href="#">Todo List</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon"><i class="fas fa-bars"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a id="tach" class="nav-link" href="Alltask.html">Taches</a>
+          <a id="cat" class="nav-link" href="allcategory.html">Categories</a>
+          <a id="ins" class="nav-link" href="inscrire.html"><span>inscrire</span></a>
+          <a id="submit1" href="#" class="btn-1
+           btn__logout" role="button">Se déconnecter</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =====================
+        end nav bar
+ ====================== -->
+
+  <!-- =====================
+        start Login
+ ====================== -->
+  <section class="addnew">
+    <div class="container">
+      <div class="now">
+        <div class="row">
+
+          <div class="col-md-2"></div>
+
+          <div class="col-md-8 add-now">
+            <h2 id="ajouter" class="mb-4">Ajouter Une Nouvelle Category</h2>
+            <form action="addnewtask.html">
+
+              <div class=" mb-4">
+                <label class="titre" id="titre" for="title">Titre</label>
+                <input id="plcho" class="form-control" name="text" required type="text" value=""
+                  placeholder="Ajouter Une Nouvelle Category">
+              </div>
+
+              <div class="form-group">
+                <button id="CréerCat" class="bubbly-button" name="submit" type="submit" value=""> Créer
+                  Category</button>
+
+              </div>
+          </div>
+          </form>
+        </div>
+
+        <div class="col-md-2"></div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- =====================
+        end Login
+ ====================== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="css/bootstrap/js/bootstrap.js"></script>
+  <script src="js/main-4-4.js"></script>
+</body>
+
+</html>

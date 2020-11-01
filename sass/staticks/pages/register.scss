@@ -1,0 +1,17 @@
+.register{
+    @extend .login;
+    .register-now{
+        @extend .login-now;
+        h2{
+            text-align: center;
+            text-transform: capitalize;
+        }
+        img{
+            margin-top: 200px;
+            @media (max-width:768px) {
+                margin-top: unset;
+
+            }
+        }
+    }
+}

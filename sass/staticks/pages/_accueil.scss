@@ -1,0 +1,8 @@
+.algo{
+    @extend .start;
+    font-size: 18px;
+    .algo-now{
+       @extend .login-now;
+       text-transform: capitalize;
+    }
+}

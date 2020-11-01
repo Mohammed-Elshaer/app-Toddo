@@ -1,0 +1,13 @@
+.btn {
+  border: 0;
+  background: #ef4c55;
+  color: white;
+  padding: 6px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  outline: none;
+  box-shadow: none;
+}

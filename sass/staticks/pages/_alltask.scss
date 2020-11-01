@@ -1,0 +1,57 @@
+.all{
+    @extend .login;
+    text-align: center;
+    
+    .all-now{
+        @extend .login-now;
+        text-align: start;
+        text-transform: capitalize;
+        padding: 15px;
+       .btr{
+           position: relative;
+          
+           a{
+            &:hover{
+                color: #fff;
+              }
+           }
+       }
+        h2{
+            @extend h1;
+        }
+        table{
+            width: 100%;
+margin-top: 20px;            .task-completed{
+                color: $green;
+                font-weight: bold;
+            }
+            .task-uncompleted{
+                color: $orang !important;
+                font-weight: bold;
+
+            }
+            // @media (max-width:500px) {
+            //     font-size:.5rem;
+            // }
+            
+            form,  button{
+                border: 0;
+                display: inline-block;
+
+            }
+ button .fa, a .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    color: #353535;
+    transition: 1s;
+    border-style: unset;
+    background-color: transparent;
+    padding: 2px;
+    &:hover{
+        color:#00bcd4;
+    }
+        }
+  }
+}}

@@ -1,0 +1,39 @@
+.navbar
+        {
+            box-shadow: $box-shadow;
+            padding: .5rem 1rem;
+            
+        .navbar-brand {
+                            font-size: 2rem;
+                            color: #212529;
+                            letter-spacing: 1.5px;
+                            transition: 1s;
+
+                        &:hover{
+                            color: $maincolor;
+                        }
+                    }
+                    
+                        a{
+                            @extend .navbar-brand;
+                            font-size: 1.25rem;
+                           
+                        }
+
+                    }
+
+        .navbar-toggler {
+                            background-color: transparent;
+                            border: 1px solid $maincolor;
+                            box-shadow: inset;
+                            margin-bottom: 10px;
+                            outline: none !important;
+                            box-shadow: none !important;
+
+                            .icon {
+                                color: $maincolor ;
+                               }
+                        }
+        
+                
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>app</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&amp;display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="icon/font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="icon/fontawesome-free-5.13.1-web/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- */-- ------------------------------------------------------
+  start option-box
+------------------------------------------------------------- -->
+
+  <section class="option-box">
+    <div class="lang-option">
+      <ul class="list-unstyled">
+
+        <button class="square_btn" id="arabic" onclick='changeToRTL()'>عربي</button>
+        <button class="square_btn" id="english" onclick='changeToLTR()'>Fr</button>
+
+      </ul>
+    </div>
+    <div class="toggle-setting">
+      <i class="fas fa-cog fa-3x fa-spin"></i>
+    </div>
+  </section>
+  <!-- */-- ------------------------------------------------------
+end option-box
+------------------------------------------------------------- -->
+  <!-- =====================
+        start nav bar
+ ====================== -->
+
+ <nav id="nav" class="navbar navbar-expand-lg">
+  <div class="container">
+      <a id="logo" class="navbar-brand" href="#">Todo List</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon"><i class="fas fa-bars"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+              <a id="tach" class="nav-link" href="addnewtask.html">Taches</a>
+              <a id="cat" class="nav-link" href="allcategory.html">Categories</a>
+              <a id="ins" class="nav-link span" href="inscrire.html"><span>inscrire</span></a>
+              <a id="submit1" href="#" class="btn-1 btn__logout" role="button">Se déconnecter</a>
+          </div>
+      </div>
+  </div>
+</nav>
+
+  <!-- =====================
+        end nav bar
+ ====================== -->
+
+  <!-- =====================
+        start add new task
+ ====================== -->
+  <section class="addnewtask">
+    <div class="container">
+      <div class="new">
+        <div class="row">
+
+          <div class="col-md-2"></div>
+
+          <div class="col-md-8 add-now">
+            <h2 id="newtsk">Ajouter Une Nouvelle Tâche  </h2>
+
+            <form action="addnewcateg.html">
+
+              <div class="form-group mb-4">
+                <label class="titre" id="titre" for="title">Titre</label>
+                <input id="plcho" class="form-control" name="text" required type="text" value=""
+                  placeholder="Ajouter Une Nouvelle Category">
+              </div>
+
+              <div class="form-group mb-4">
+                <label id="desctsk" for="exampleFormControlTextarea1" class="form-label">Description</label>
+                <textarea class="form-control" id="description" rows="3"
+                  placeholder="Ajouter la description de tache"></textarea>
+              </div>
+
+              <div class="form-group mb-4">
+                <label id="imgtsk" for="image">Image</label>
+
+                <div class="form-file">
+                  <input type="file" class="form-file-input" required type="file">
+
+                  <label class="form-file-label" for="inputGroupFile01">
+                    <span id="image" class="form-file-button text " name="image">Choose file...</span>
+                    <span class=" form-file-text"></span>
+                  </label>
+
+                </div>
+              </div>
+
+              <div class="form-group mb-4">
+
+                <div class="form-group">
+                  <label id="dattsk" for="date">Date de la tache</label> <input class="form-control date datepicker"
+                    id="date" name="date" required type="text" value="" placeholder="20/10/2020">
+                </div>
+              </div>
+
+              <div class="form-group mb-4">
+
+                <label id="asstsk" id="user">Attribuez la tâche à</label>
+                <select class="form-select form-control " required aria-label="select example">
+                  <option value="1">algo</option>
+                  <option value="2">sara</option>
+                  <option value="3">salima</option>
+                  <option value="3">zizo</option>
+                  <option value="3">mira</option>
+                </select>
+              </div>
+
+              <div class="form-group bt">
+                <button id="submit" class="bubbly-button" name="submit" type="submit" value=""> Créer Tache</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-2"></div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- =====================
+        end add new task
+ ====================== -->
+  <script src="css/bootstrap/js/bootstrap.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="js/main-5.js"></script>
+
+</body>
+
+</html>

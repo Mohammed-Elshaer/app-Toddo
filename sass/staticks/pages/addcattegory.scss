@@ -1,0 +1,12 @@
+.addcattegory{
+    @extend .all;
+    .addcateg-now{
+        @extend  .all-now;
+
+        h2{
+            @extend h1;
+            font-size:2rem;
+        }
+       
+    }
+}

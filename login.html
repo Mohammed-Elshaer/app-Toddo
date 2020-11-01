@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>app</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&amp;display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="icon/font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="icon/fontawesome-free-5.13.1-web/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+  <!-- */-- ------------------------------------------------------
+  start option-box
+------------------------------------------------------------- -->
+
+  <section class="option-box">
+    <div class="lang-option">
+      <ul class="list-unstyled">
+        <button class="square_btn" id="arabic" onclick='changeToRTL()'>عربي</button>
+        <button class="square_btn" id="english" onclick='changeToLTR()'>Fr</button>
+
+      </ul>
+    </div>
+    <div class="toggle-setting">
+      <i class="fas fa-cog fa-3x fa-spin"></i>
+    </div>
+  </section>
+  <!-- */-- ------------------------------------------------------
+end option-box
+------------------------------------------------------------- -->
+  <!-- =====================
+        start nav bar
+ ====================== -->
+
+  <nav id="nav" class="navbar navbar-expand-lg">
+    <div class="container">
+      <a id="logo" class="navbar-brand" href="#">Todo List</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon"><i class="fas fa-bars"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup" justify-content-end>
+        <div class="navbar-nav">
+          <a id="submit1" href="inscrire.html" class="btn-1  btn__login" role="button">identifier</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =====================
+        end nav bar
+ ====================== -->
+
+  <!-- =====================
+        start Login
+ ====================== -->
+  <section class="login">
+    <div class="container">
+      <div class="login-now">
+        <div class="row">
+
+         
+
+          <div class="col-md-6">
+            <h1 id="login" class="mb-4">Login</h1>
+
+            <form action="accueil.html">
+              <div class="form-group">
+                <input id="csrf_token" name="csrf_token" type="hidden"
+                  value="IjdhY2U5NWM4MjUxMGE4ZjYxYWU2YzY3NTQ5ZmIxNGMyODlkOTAyYjMi.X43Qgw.M-3_cH1U4_TkRVHIolm8QTIkAiY">
+
+                <div class="form-group mb-4">
+                  <label id="email" for="email">Email</label>
+                  <input id="email1" class="form-control" name="email" required type="text" value=""
+                    placeholder="type your Email">
+                </div>
+
+                <div class="form-group mb-4">
+                  <label id="password" for="password">Password</label>
+                  <input id="password1" class="form-control" name="password" required type="password" value=""
+                    placeholder="type your Password">
+                </div>
+
+                <div class="form-group">
+
+                  <button id="submit" class="bubbly-button form-control" name="submit" type="submit" value="identifier">
+                    identifier</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class=" image col-md-6">
+            <img class="img-fluid" src="images/login.svg" alt="login photo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =====================
+        end Login
+ ====================== -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="css/bootstrap/js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

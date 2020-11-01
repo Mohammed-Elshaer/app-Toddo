@@ -1,0 +1,16 @@
+.addnew{
+    @extend .login;
+   
+    .add-now{
+        @extend  .login-now;
+
+        h2{
+            text-align: center;
+        }
+.form-group{
+    text-align: center;
+
+}
+       
+    }
+}

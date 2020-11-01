@@ -1,0 +1,16 @@
+
+.start{
+    @extend .login;
+    text-align: center;
+    h2{
+        @extend h1;
+        font-size:5rem;
+        @media (max-width:768px) {
+           
+                font-size: 2rem;
+                color: $green;
+            
+        }
+    }
+}
+
