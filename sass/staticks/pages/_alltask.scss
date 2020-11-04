@@ -37,6 +37,7 @@ margin-top: 20px;            .task-completed{
             form,  button{
                 border: 0;
                 display: inline-block;
+                background-color: #fff;
 
             }
  button .fa, a .fa {
@@ -47,7 +48,7 @@ margin-top: 20px;            .task-completed{
     color: #353535;
     transition: 1s;
     border-style: unset;
-    background-color: transparent;
+    background-color: #fff;
     padding: 2px;
     &:hover{
         color:#00bcd4;

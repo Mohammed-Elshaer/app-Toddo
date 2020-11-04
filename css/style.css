@@ -406,6 +406,7 @@ a {
 .all .all-now table form, .addcattegory .all-now table form, .addcattegory .addcateg-now table form, .all .all-now table button, .addcattegory .all-now table button, .addcattegory .addcateg-now table button {
   border: 0;
   display: inline-block;
+  background-color: #fff;
 }
 .all .all-now table button .fa, .addcattegory .all-now table button .fa, .addcattegory .addcateg-now table button .fa, .all .all-now table a .fa, .addcattegory .all-now table a .fa, .addcattegory .addcateg-now table a .fa {
   display: inline-block;
@@ -415,7 +416,7 @@ a {
   color: #353535;
   transition: 1s;
   border-style: unset;
-  background-color: transparent;
+  background-color: #fff;
   padding: 2px;
 }
 .all .all-now table button .fa:hover, .addcattegory .all-now table button .fa:hover, .addcattegory .addcateg-now table button .fa:hover, .all .all-now table a .fa:hover, .addcattegory .all-now table a .fa:hover, .addcattegory .addcateg-now table a .fa:hover {
